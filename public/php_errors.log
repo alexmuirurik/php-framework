@@ -1,0 +1,20 @@
+[09-Jan-2024 16:11:56 UTC] PHP Warning:  Undefined array key "GET" in C:\Apache24\htdocs\purephp\customframe\vendor\bramus\router\src\Bramus\Router\Router.php on line 292
+[09-Jan-2024 17:40:13 UTC] PHP Warning:  require_once(C:\Apache24\htdocs\purephp\customframe\public../vendor/autoload.php): Failed to open stream: No such file or directory in C:\Apache24\htdocs\purephp\customframe\public\index.php on line 3
+[09-Jan-2024 17:40:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Apache24\htdocs\purephp\customframe\public../vendor/autoload.php' (include_path='.;C:\php\pear') in C:\Apache24\htdocs\purephp\customframe\public\index.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\Apache24\htdocs\purephp\customframe\public\index.php on line 3
+[09-Jan-2024 18:31:26 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Routes::{closure}(), 0 passed and exactly 1 expected in C:\Apache24\htdocs\purephp\customframe\config\web.php:13
+Stack trace:
+#0 [internal function]: App\Routes->{closure}()
+#1 C:\Apache24\htdocs\purephp\customframe\vendor\bramus\router\src\Bramus\Router\Router.php(458): call_user_func_array(Object(Closure), Array)
+#2 C:\Apache24\htdocs\purephp\customframe\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke(Object(Closure), Array)
+#3 C:\Apache24\htdocs\purephp\customframe\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#4 C:\Apache24\htdocs\purephp\customframe\config\web.php(82): Bramus\Router\Router->run()
+#5 C:\Apache24\htdocs\purephp\customframe\app\Routes.php(18): require('C:\\Apache24\\htd...')
+#6 C:\Apache24\htdocs\purephp\customframe\app\Routes.php(30): App\Routes->webUrls()
+#7 C:\Apache24\htdocs\purephp\customframe\app\App.php(12): App\Routes->goToUrl()
+#8 C:\Apache24\htdocs\purephp\customframe\app\App.php(16): App\App->getTheUrl()
+#9 C:\Apache24\htdocs\purephp\customframe\public\index.php(7): App\App->launchApp()
+#10 {main}
+  thrown in C:\Apache24\htdocs\purephp\customframe\config\web.php on line 13

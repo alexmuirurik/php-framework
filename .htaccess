@@ -1,0 +1,12 @@
+Options -Indexes 
+
+RewriteEngine On
+
+RewriteRule \.(js|css|swf|jpg|gif|png|eot|tff|woff|woff2|map|wav|scss)(\?|$) - [NC,QSA,L]
+
+RewriteRule ^(.*)$ public/index.php?url=$1 [NC,L,QSA]
+
+php_flag log_errors On
+
+php_value error_log "php_errors.log"
+
